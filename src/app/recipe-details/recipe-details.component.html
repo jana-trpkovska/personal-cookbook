@@ -1,0 +1,36 @@
+<section class="page-section">
+  <div>
+    <button type="button" class="btn btn-light" routerLink="/home">Go home</button>
+  </div>
+  <div class="container">
+
+    <div class="name-container rounded">
+      <h1 class="name">{{oneRecipe.name}}</h1>
+    </div>
+
+    <div class="content">
+
+      <div class="img rounded">
+        <img class="foodImg rounded" src="{{oneRecipe.image}}" alt="food image">
+      </div>
+
+      <div class="details rounded">
+        <h3 class="bold">Ingredients:</h3>
+        <ul class="list">
+          <li class="ingredients" *ngFor="let ing of oneRecipe.ingredients">{{ing}}</li>
+        </ul>
+        <h3 class="bold">Method:</h3>
+        <ol class="method-name">
+          <li *ngFor="let met of oneRecipe.method_name;let i=index" >{{met}}
+            <ul>
+              <li>{{oneRecipe.method_details[i]}}</li>
+            </ul>
+          </li>
+        </ol>
+        <p class="source">Source: <a class="link" href="{{oneRecipe.source}}">{{oneRecipe.source}}</a></p>
+      </div>
+
+    </div>
+
+  </div>
+</section>

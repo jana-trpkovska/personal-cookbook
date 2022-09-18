@@ -1,0 +1,73 @@
+.name-container{
+  background-color: rgb(246, 225, 197);
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+.name{
+  font-weight: bold;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.img{
+  max-width: 486px;
+  margin: 2%;
+}
+.foodImg{
+  width: 100%;
+}
+.details{
+  background-color: rgb(246, 225, 197);
+  padding: 3%;
+  margin: 2%;
+  max-width: 486px;
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
+}
+@media screen and (max-width: 486px){
+  .details{
+    width: 100%;
+  }
+}
+.ingredients{
+  font-size: 17px;
+}
+.list{
+  list-style-type: none;
+}
+.bold{
+  font-weight: bold;
+}
+.method-name{
+  font-weight: bold;
+  font-size: 17px;
+}
+.method-name ul li{
+  font-weight: normal;
+}
+button{
+  margin: 3%;
+  padding: 0.5% 3%;
+}
+.source{
+  font-size: 17px;
+  font-weight: bold;
+}
+.link{
+  background: linear-gradient(0deg, #e6a756, #e6a756) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+  color: #1c0e09;
+  font-weight: normal;
+  max-width: 486px;
+  word-break: break-all;
+}
+.link:hover{
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}

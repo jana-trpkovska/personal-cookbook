@@ -1,0 +1,38 @@
+<app-search></app-search>
+<section class="page-section cta rounded">
+  <h1 class="title">
+    <a class="title-link" routerLink="/breakfast">Breakfast</a>
+  </h1>
+  <div class="recipes-display">
+    <app-recipe-card class="grid-item" *ngFor="let recipe of breakfastHome | filter:searchKey:'name'" [recipe]="recipe"></app-recipe-card>
+  </div>
+</section>
+
+<section class="page-section cta rounded">
+  <h1 class="title">
+    <a class="title-link" routerLink="/lunch">Lunch</a>
+  </h1>
+  <div class="recipes-display rounded">
+    <app-recipe-card class="grid-item" *ngFor="let recipe of lunchHome | filter:searchKey:'name'" [recipe]="recipe"></app-recipe-card>
+  </div>
+</section>
+
+<section class="page-section cta rounded">
+  <h1 class="title">
+    <a class="title-link" routerLink="/dinner">Dinner</a>
+  </h1>
+  <div class="recipes-display rounded">
+    <app-recipe-card class="grid-item" *ngFor="let recipe of dinnerHome | filter:searchKey:'name'" [recipe]="recipe"></app-recipe-card>
+  </div>
+</section>
+
+<section class="page-section cta rounded">
+  <h1 class="title">
+    <a class="title-link" routerLink="/dessert">Dessert</a>
+  </h1>
+  <div class="recipes-display rounded">
+    <app-recipe-card class="grid-item" *ngFor="let recipe of dessertHome | filter:searchKey:'name'" [recipe]="recipe"></app-recipe-card>
+  </div>
+</section>
+
+

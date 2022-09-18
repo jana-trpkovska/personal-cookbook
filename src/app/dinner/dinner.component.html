@@ -1,0 +1,9 @@
+<app-search></app-search>
+<section class="page-section cta rounded">
+  <h1 class="title">
+    <a class="title-link" routerLink="/dinner">Dinner</a>
+  </h1>
+  <div class="recipes-display rounded">
+    <app-recipe-card class="grid-item" *ngFor="let recipe of dinner | filter:searchKey:'name'" [recipe]="recipe"></app-recipe-card>
+  </div>
+</section>

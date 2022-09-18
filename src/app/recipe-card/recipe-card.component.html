@@ -1,0 +1,13 @@
+<div class="recipe-card rounded">
+  <a class="recipe" [routerLink]="['/recipe',recipe.id]" >
+    <div class="image">
+      <img class="food-image" src="{{recipe.image}}" alt="food image">
+    </div>
+    <div class="tag" *ngFor="let tag of recipe.tags">
+      {{tag}}
+    </div>
+    <div class="name">
+      <p>{{recipe.name}}</p>
+    </div>
+  </a>
+</div>

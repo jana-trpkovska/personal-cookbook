@@ -1,0 +1,40 @@
+.recipe-card{
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+  overflow: hidden;
+  height: calc(100% - 10px);
+  transition: margin 0.2s ease-in-out;
+}
+.image{
+  width: 100%;
+  height: 280px;
+}
+.food-image{
+  width: 100%;
+  height: 100%;
+}
+.name{
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+p{
+  margin-top: 10px;
+  font-size: 27px;
+  font-weight: 540;
+  color: #2F170F;
+}
+.recipe{
+  text-decoration: none;
+}
+.recipe-card:hover{
+  margin-top: -10px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.9);
+}
+.tag{
+  display: inline;
+  color: #6e502a;
+  padding: 2%;
+}
